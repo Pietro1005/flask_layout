@@ -8,7 +8,18 @@ def index():]
         "nome": "Kinque"
         "turma": "2° Ensino Medio Técnico"
     }
-    return render_template('index.html', title="home" aluno=aluno)
+    professores = [
+        {
+            "nome" = "Felipe Ishara",
+            "materia": "Web II"
+        },
+
+        {
+            "nome" = "Edidio Lima"
+            "materia" = "Software"
+        }
+    ]
+    return render_template('index.html', title="home" aluno=aluno, professores=professores )
 
 @app.route("/boletim")
 def boletim():

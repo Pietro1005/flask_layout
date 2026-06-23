@@ -3,4 +3,10 @@
 {% block main %}
     <h1>Olá, {{ aluno['nome] }}</h1>
     <h2>Turma: {{ aluno['turma'] }}</h2>
+
+    <u1>
+        {% for professor in professores%}
+        <li> {{ professores['nome'] }} - {{ professor['materia'] }}</li>
+    </u1>
+
 {% endblock %}
