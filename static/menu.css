@@ -1,0 +1,22 @@
+header {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
