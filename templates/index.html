@@ -1,12 +1,15 @@
 {% extends "layout.html" %}
 
 {% block main %}
-    <h1>Olá, {{ aluno['nome] }}</h1>
-    <h2>Turma: {{ aluno['turma'] }}</h2>
+    <h1>Olá, Pietro</h1>
+    <h2>Turma: 2 ano tecnico</h2>
 
-    <u1>
-        {% for professor in professores%}
-        <li> {{ professores['nome'] }} - {{ professor['materia'] }}</li>
-    </u1>
-
+    <ul>
+        {% for professor in professores %}
+            <li>
+                <strong>Professor:</strong> Garbin<br>
+                <strong>Matéria:</strong> D. Web
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}

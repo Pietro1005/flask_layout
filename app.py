@@ -5,22 +5,28 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     aluno = {
-        "nome": "Kinque"
-        "turma:" "2° Ensino Medio Técnico"
+        "nome": "Kinque",
+        "turma": "2° Ensino Médio Técnico"
     }
     professores = [
         {
-            "nome" = "Felipe Ishara",
-            "materia:" "Web II"
+            "nome": "Felipe Ishara",
+            "materia": "Web II"
         },
-
         {
-            "nome" = "Edidio Lima"
-            "materia:" = "Software"
+            "nome": "Edidio Lima",
+            "materia": "Software"
         }
     ]
-    return render_template('index.html', title="home" aluno=aluno, professores=professores )
+    return render_template('index.html', title="Home", aluno=aluno, professores=professores)
 
 @app.route("/boletim")
 def boletim():
-    return render_template('boletim.html', title="boletim")
+    return render_template('boletim.html', title="Boletim")
+
+@app.route("/sobre")
+def sobre():
+    return render_template('Sobre.html', title="Sobre")
+
+if __name__ == "__main__":
+    app.run(debug=True)
